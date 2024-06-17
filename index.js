@@ -1,5 +1,6 @@
 const entrada = require("prompt-sync")({sigint: true});
 const niveis = ["Ferro", "Bronze", "Prata", "Ouro", "Diamante", "Lendário", "Imortal"];
+let nivel;
 
 let vitorias = +entrada("Digite a quantidade de vitórias de seu herói. O valor deve ser maior ou igual a 0: ");
 let derrotas = +entrada("Digite a quantidade de derrotas de seu herói. O valor deve ser maior ou igual a 0: ");
@@ -16,7 +17,6 @@ function saldoRankeadas(vitorias, derrotas) {
 }
 
 let saldoVitorias = saldoRankeadas(vitorias, derrotas);
-let nivel;
 
 function nivelHeroi() {
     switch(true) {
